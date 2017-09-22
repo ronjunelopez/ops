@@ -1,0 +1,28 @@
+{
+  "name": "ronlopez",
+  "version": "1.0.0",
+  "description": "jdi mobile notification server",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.5.0",
+    "couchbase": "^2.4.0",
+    "express": "^4.15.4",
+    "request": "^2.82.0",
+    "request-promise": "^4.2.1",
+    "request-promise-json": "^1.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jdi",
+    "mobile",
+    "notification",
+    "server\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C",
+    "\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C",
+    "\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[D\u001b[D"
+  ],
+  "author": "Ron June G. Lopez",
+  "license": "ISC"
+}
