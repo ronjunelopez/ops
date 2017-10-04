@@ -1,6 +1,6 @@
 var couchbase = require("couchbase");
 
-var cluster = new couchbase.Cluster('couchbase://dev.db.suites.digital:8091');
+var cluster = new couchbase.Cluster('couchbase://127.0.0.1');
 var bucket = cluster.openBucket('moment', function(err) {
 	  if (err) {
 	    // Failed to make a connection to the Couchbase cluster.
