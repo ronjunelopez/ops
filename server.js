@@ -1,22 +1,33 @@
 var couchbase = require("couchbase");
 
+// var cluster = new couchbase.Cluster('couchbase://dev.db.suites.digital');
 var cluster = new couchbase.Cluster('couchbase://127.0.0.1');
-var bucket = cluster.openBucket('moment', function(err) {
+
+// cluster.authenticate("tester", "tester");
+
+
+var bucket = cluster.openBucket('moment-sync', function(err) {
 	  if (err) {
 	    // Failed to make a connection to the Couchbase cluster.
 	    throw err;
 	  }
+
+
+	
 	  
 });
 
-bucket.operationTimeout = 5000;
 
-bucket.get('notification::04798fa7-4467-4307-9bb0-b6c950a8d304', function(err, result) {
-		 if (err) {
-      // Failed to retrieve key
-      throw err;
-    }
+var ViewQuery = couchbase.ViewQuery;
+var query = ViewQuery.from('dev_notification', 'all');
 
-    console.log(result);
+// console.log(query.toLiveQuery());
 
+bucket.query(query, function(err, results) {
+	if(err) {
+		throw err;
+	}
+	  for(i in results) {
+	    console.log('Row:', results[i]);
+	  }
 });
